@@ -1,19 +1,35 @@
 .home-header{
   position: fixed;
-  top: 0;
+  top: 15px;
   left: 0;
   right: 0;
   z-index: 100;
 
   padding: 10px;
   padding-bottom: 7px;
-  background-color: rgb(252, 198, 207);
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgba(252, 198, 207, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   height: 75px;
+  border-radius: 100px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: floatDown 0.85s ease-out forwards;
+}
+
+@keyframes floatDown{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .left-section{
@@ -82,40 +98,38 @@
 .right-section{
   padding-bottom: 5px;
   margin-right: 10px;
-  width: 275px;
+  width: 280px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.section-link{
-  font-size: 20px;
-  font-weight: 700;
-  color: rgb(150, 70, 95);
+.section-link-button{
+  background-color: rgb(180, 85, 110);
+  font-size: 19px;
+  font-weight: 650;
+  color: white;
+  padding: 4px;
+  border-style: solid;
+  border-color: rgb(150, 70, 95);
+  border-radius: 10px;
 
-  transition: opacity 0.3s;
+  transition: background-color 0.2s;
+  transition: border-color 0.2s;
 }
 
-.section-link:hover{
-  opacity: 0.5;
+.section-link-button:hover{
+  background-color: rgb(197, 124, 144);
+  border-color: rgb(186, 111, 135);
 }
 
-.section-link:active{
-  opacity: 0.3;
+.section-link-button:active{
+  background-color: rgb(156, 89, 108);
+  border-color: rgb(144, 84, 103);
 }
 
-.section-link:hover,
+.section-link-button:hover,
 .search-button:hover{
   cursor: pointer;
 }
-
-/* .signup-button{
-  background-color: rgb(180, 85, 110);
-  color: white;
-  padding: 3px;
-  border-style: solid;
-  border-color: rgb(150, 70, 95);
-
-  display: none;
-} */
