@@ -1,7 +1,10 @@
+import {renderHomepage} from './homepage.js';
+import {applyFloatInAnimation} from '../animations/floatInOnScroll.js';
+
 function renderHeader(){
   const headerHTML = `
   <header class="home-header">
-    <div class="left-section">
+    <div class="left-section js-left-section">
       <img class="logo" width="100" src="images/JessFlix_Logo.png" alt="Unable to load">
     </div>
 
@@ -26,7 +29,14 @@ function renderHeader(){
   </header>
   `;
 
-  document.querySelector('.js-mainpage-header').innerHTML = headerHTML;
+  document.querySelector('.js-mainpage-header')
+    .innerHTML = headerHTML;
+
+  document.querySelector('.js-left-section')
+    .addEventListener('click', () => {
+      renderHomepage();
+      applyFloatInAnimation();
+    });
 }
 
 renderHeader();

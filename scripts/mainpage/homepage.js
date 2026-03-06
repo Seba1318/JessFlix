@@ -1,6 +1,6 @@
 import {applyFloatInAnimation} from '../animations/floatInOnScroll.js';
 
-function renderHomepage(){
+export function renderHomepage(){
   const homepageHTML = `
     <div class="hero-container">
       <div class="hero-section">
