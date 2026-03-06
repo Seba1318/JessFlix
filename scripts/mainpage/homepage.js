@@ -10,8 +10,8 @@ export function renderHomepage(){
           <p class="hero-message-line">Watch the Vision.</p>
         </div>
 
-        <div class="hero-section-image" width="200px">
-          <img src="images/hero-image.png" class="hero-image">
+        <div class="hero-section-image">
+          <img src="images/hero-image.png">
         </div>
       </div>
     </div>
