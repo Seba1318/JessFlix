@@ -12,7 +12,7 @@
   background-color: rgba(252, 198, 207, 0.5);
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  height: 75px;
+  height: 65px;
   border-radius: 100px;
 
   display: flex;
@@ -59,6 +59,7 @@
   border-style: solid;
   border-color: rgb(220, 185, 192);
   border-width: 1.5px;
+  border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
 }
@@ -74,6 +75,7 @@
   border-style: solid;
   border-color: rgba(220, 185, 192, 0.7);
   border-width: 1.5px;
+  border-radius: 2px;
   background-color: rgb(180, 85, 110);
 
   display: flex;
@@ -105,31 +107,31 @@
   justify-content: space-between;
 }
 
-.section-link-button{
+.page-link-button{
   background-color: rgb(180, 85, 110);
   font-size: 19px;
   font-weight: 650;
   color: white;
-  padding: 4px;
+  padding: 5px;
   border-style: solid;
   border-color: rgb(150, 70, 95);
-  border-radius: 10px;
+  border-radius: 20px;
 
   transition: background-color 0.2s;
   transition: border-color 0.2s;
 }
 
-.section-link-button:hover{
+.page-link-button:hover{
   background-color: rgb(197, 124, 144);
   border-color: rgb(186, 111, 135);
 }
 
-.section-link-button:active{
+.page-link-button:active{
   background-color: rgb(156, 89, 108);
   border-color: rgb(144, 84, 103);
 }
 
-.section-link-button:hover,
+.page-link-button:hover,
 .search-button:hover{
   cursor: pointer;
 }

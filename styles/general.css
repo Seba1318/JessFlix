@@ -1,7 +1,10 @@
 body{
   font-family: Arial;
   padding-top: 85px;
-  padding-bottom: 1000px;
 
   background-image: linear-gradient(to right, rgb(249, 178, 190), rgb(114, 1, 1));
+}
+
+footer{
+  text-align: center;
 }

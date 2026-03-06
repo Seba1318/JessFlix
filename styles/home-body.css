@@ -1,6 +1,6 @@
 .hero-container{
   margin-top: 70px;
-  margin-bottom: 65px;
+  margin-bottom: 120px;
 
   display: flex;
   align-items: center;
@@ -65,13 +65,79 @@
   color:rgb(117, 13, 20);
 }
 
-.new-section{
-  margin-left: 50px;
+/* .about-section-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.about-section-container{
+  position: relative;
+  margin-bottom: 150px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.reveal {
+.about-section-text{
+  width: 500px;
+  padding: 25px;
+  margin-left: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(246, 230, 238, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-description,
+.about-title{
+  font-size: 33px;
+  color: rgb(93, 69, 69);
+}
+
+.card{
+  max-width: 100px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.movies-stats-card{
+  position: absolute;
+  left: -75px;
+  top: -25px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgb(222, 119, 171);
+}
+
+.tv-shows-stats-card{
+  position: absolute;
+  right: -100px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgb(252, 110, 181);
+}
+
+.books-stats-card{
+  position: absolute;
+  bottom: -60px;
+  left: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgb(246, 95, 171);
+}
+
+.reveal{
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-75px);
   transition: all 0.8s ease-out;
 }
 
