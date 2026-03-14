@@ -1,5 +1,6 @@
 import {renderHomepage} from './homepage.js';
 import {applyFloatInAnimation} from '../animations/floatInOnScroll.js';
+import {renderMoviesPage} from './movies-page.js';
 
 function renderHeader(){
   const headerHTML = `
@@ -20,7 +21,7 @@ function renderHeader(){
     </div>
 
     <div class="right-section">
-      <p class="page-link-button">Movies</p>
+      <p class="page-link-button js-movies-button">Movies</p>
 
       <p class="page-link-button">TV Shows</p>
 
@@ -36,6 +37,11 @@ function renderHeader(){
     .addEventListener('click', () => {
       renderHomepage();
       applyFloatInAnimation();
+    });
+
+  document.querySelector('.js-movies-button')
+    .addEventListener('click', () => {
+      renderMoviesPage();
     });
 }
 
