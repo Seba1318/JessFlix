@@ -1,5 +1,8 @@
-.hero-container{
+.mainpage-content{
   margin-top: 70px;
+}
+
+.hero-container{
   margin-bottom: 120px;
 
   display: flex;
