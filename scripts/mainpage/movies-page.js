@@ -29,6 +29,8 @@ export function renderMoviesPage(){
     `;
   });
 
+  window.scrollTo(0, 0);
+
   document.querySelector('.js-movie-selector').innerHTML += moviesPageHTML;
 
   handleScrollEdges();

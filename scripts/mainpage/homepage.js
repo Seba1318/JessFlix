@@ -30,6 +30,8 @@ export function renderHomepage(){
     </div>
   `;
 
+  window.scrollTo(0, 0);
+
   document.querySelector('.js-mainpage-content').innerHTML = homepageHTML;
 }
 
