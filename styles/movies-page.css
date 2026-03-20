@@ -1,4 +1,21 @@
+.movies-page-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movies-page-title{
+  font-family: "Petit Formal Script", cursive;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(2rem, 5vw, 50px);
+  color:rgb(117, 13, 20);
+}
+
 .movie-selector-container{
+  width: 100%;
   background-color: rgba(250, 171, 211, 0.3);
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -28,6 +45,8 @@
   scrollbar-width: none;
 
   transform: translateZ(0);
+
+  scroll-behavior: smooth;
 }
 
 .movie-selector-edge-right,
@@ -40,8 +59,6 @@
   width: 75px;
   background-image: linear-gradient(to left, rgb(227, 143, 185), rgba(255, 255, 255, 0));
 
-  pointer-events: none;
-
   transform: translateZ(0);
 
   transition: 0.3s opacity;
@@ -53,6 +70,36 @@
   opacity: 0;
 }
 
+.scroll-button-right,
+.scroll-button-left{
+  position: absolute;
+  right: 0;
+  top: 45%;
+  z-index: 51;
+
+  width: 50px;
+  height: 50px;
+  background: none;
+  border:  none;
+
+  transition: 0.3s;
+}
+
+.scroll-button-left{
+  left: 0;
+  opacity: 0;
+}
+
+.scroll-button-right:hover,
+.scroll-button-left:hover{
+  cursor: pointer;
+}
+
+.bi-arrow-right-circle-fill,
+.bi-arrow-left-circle-fill{
+  color: rgb(255, 255, 255);
+}
+
 .is-visible{
   opacity: 1;
 }
@@ -61,10 +108,19 @@
   opacity: 0;
 }
 
+.is-button-active{
+  opacity: 1;
+}
+
+.is-button-inactive{
+  opacity: 0;
+  pointer-events: none;
+}
+
 .movie-card{
   width: 200px;
   height: 350px;
-  border: 2px solid rgba(68, 1, 1, 0.261);
+  border: 4px solid rgba(68, 1, 1, 0.261);
   border-radius: 7px;
   background-color: rgb(237, 93, 168);
 
@@ -79,7 +135,8 @@
   cursor: pointer;
   
   background-color: rgb(214, 4, 112);
-  box-shadow: 5px 5px 5px 5px rgb(114, 1, 1);
+  box-shadow: 6.5px 7px 5px 5px rgb(114, 1, 1);
+  border-color:rgba(255, 255, 255, 1);
 }
 
 .movie-card-img{
