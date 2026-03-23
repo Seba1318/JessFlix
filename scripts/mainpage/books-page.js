@@ -1,11 +1,11 @@
-import {movies} from '../data/movies.js';
+import {books} from '../data/books.js';
 import {handleScrollButtons, handleScrollEdges} from '../selector/selector-scroll.js';
 
-export function renderMoviesPage(){
+export function renderBooksPage(){
   document.querySelector('.js-mainpage-content')
     .innerHTML = `
     <div class="page-container">
-      <h1 class="page-title">Movies</h1>
+      <h1 class="page-title">Books</h1>
       <div class="selector-container">
         <div class="selector-wrapper">
           <div class="selector js-selector"></div>
@@ -26,15 +26,15 @@ export function renderMoviesPage(){
     </div>
     `;
 
-  let moviesPageHTML = ``;
+  let booksPageHTML = ``;
 
-  movies.forEach((movie) => {
-    moviesPageHTML += `
+  books.forEach((book) => {
+    booksPageHTML += `
     <div class="selector-card">
-      <img src="${movie.image}" class="selector-card-img">
+      <img src="${book.image}" class="selector-card-img">
       <div class="selector-card-info">
-        <h3>${movie.title}</h3>
-        <p>Rating: ${movie.rating}</p>
+        <h3>${book.title}</h3>
+        <p>${book.author}</p>
       </div>
     </div>
     `;
@@ -42,7 +42,7 @@ export function renderMoviesPage(){
 
   window.scrollTo(0, 0);
 
-  document.querySelector('.js-selector').innerHTML += moviesPageHTML;
+  document.querySelector('.js-selector').innerHTML += booksPageHTML;
 
   handleScrollEdges();
   handleScrollButtons();

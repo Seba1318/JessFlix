@@ -1,7 +1,7 @@
 export function handleScrollEdges(){
-  const selector = document.querySelector(".js-movie-selector");
-  const leftEdge = document.querySelector(".js-movie-selector-edge-left");
-  const rightEdge = document.querySelector(".js-movie-selector-edge-right");
+  const selector = document.querySelector(".js-selector");
+  const leftEdge = document.querySelector(".js-selector-edge-left");
+  const rightEdge = document.querySelector(".js-selector-edge-right");
 
   const checkEdges = () => {
     if(selector.scrollLeft > 10){
@@ -23,7 +23,7 @@ export function handleScrollEdges(){
 }
 
 export function handleScrollButtons(){
-  const selector = document.querySelector(".js-movie-selector");
+  const selector = document.querySelector(".js-selector");
   const leftButton = document.querySelector(".js-scroll-button-left");
   const rightButton = document.querySelector(".js-scroll-button-right");
 
