@@ -67,6 +67,12 @@
   font-size: 18px;
 }
 
+.search-bar:focus{
+  outline: none;
+  border-color: rgb(220, 185, 192);
+  box-shadow: 0 0 5px rgba(220, 185, 192, 0.7);
+}
+
 .search-bar::placeholder{
   font-size: 18px;
 }
