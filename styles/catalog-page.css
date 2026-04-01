@@ -134,15 +134,17 @@
   flex-direction: column;
   overflow: hidden;
 
-  transition: all 0.4s;
+  transition: all 0.5s ease;
 }
 
 .selector-card:hover{
   cursor: url("../images/search-heart.svg") 12 12, auto;
   
   background-color: rgb(214, 4, 112);
-  box-shadow: 6.5px 7px 5px 5px rgb(114, 1, 1);
+  box-shadow: 0px 7px 5px 5px rgb(114, 1, 1);
   border-color:rgba(255, 255, 255, 1);
+
+  transform: scale(1.05);
 }
 
 .selector-card-img{

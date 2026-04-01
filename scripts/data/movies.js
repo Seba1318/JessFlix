@@ -139,3 +139,15 @@ export const movies = [
     rating: 8.2
   }
 ];
+
+export function getMovieById(movieId){
+  let matchingMovie = null;
+
+  movies.forEach((movie) => {
+    if(movie.id === movieId){
+      matchingMovie = movie;
+    }
+  });
+
+  return matchingMovie;
+}

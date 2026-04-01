@@ -120,3 +120,15 @@ export const books = [
     author: "Lev Tolstoi"
   }
 ];
+
+export function getBookById(bookId){
+  let matchingBook = null;
+
+  books.forEach((book) => {
+    if(book.id === bookId){
+      matchingBook = book;
+    }
+  });
+
+  return matchingBook;
+}

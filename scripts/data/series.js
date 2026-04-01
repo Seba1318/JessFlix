@@ -60,3 +60,15 @@ export const series = [
     rating: 8.3
   }
 ];
+
+export function getSerieById(serieId){
+  let matchingSerie = null;
+
+  series.forEach((serie) => {
+    if(serie.id === serieId){
+      matchingSerie = serie;
+    }
+  });
+
+  return matchingSerie;
+}
