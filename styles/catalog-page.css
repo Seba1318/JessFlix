@@ -138,7 +138,7 @@
 }
 
 .selector-card:hover{
-  cursor: pointer;
+  cursor: url("../images/search-heart.svg") 12 12, auto;
   
   background-color: rgb(214, 4, 112);
   box-shadow: 6.5px 7px 5px 5px rgb(114, 1, 1);
