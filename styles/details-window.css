@@ -113,3 +113,23 @@
   line-height: 1.6;
   color: whitesmoke;
 }
+
+.trailer-link{
+  text-decoration: none;
+}
+
+.trailer-link-container {
+  margin-top: 15px;
+  color: whitesmoke;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trailer-link-container:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
