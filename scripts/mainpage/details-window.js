@@ -1,6 +1,6 @@
 export function renderDetailsWindow(item){
   const detailsWindowHTML = `
-    <div class="details-window-container">
+    <div class="details-window-container js-details-window-container">
       <div class="details-window">
         <button class="details-window-close-button js-close-button">✕</button>
 
@@ -21,8 +21,18 @@ export function renderDetailsWindow(item){
 
   document.body.insertAdjacentHTML("beforeend", detailsWindowHTML);
 
+  const container = document.querySelector('.js-details-window-container');
+
+  setTimeout(() => {
+    container.classList.add('is-active');
+  }, 10);
+
   document.querySelector('.js-close-button')
     .addEventListener('click', () => {
-      document.querySelector('.details-window-container').remove();
+      container.classList.remove('is-active');
+
+      setTimeout(() => {
+        container.remove();
+      }, 300);
     });
 }

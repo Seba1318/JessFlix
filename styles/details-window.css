@@ -12,6 +12,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.is-active{
+  opacity: 1;
 }
 
 .details-window{
@@ -61,6 +68,10 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+  cursor: url("../images/search-heart.svg") 12 12, auto;
+
+  align-self: center;
 }
 
 .details-cover{
