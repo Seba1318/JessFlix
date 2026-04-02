@@ -12,7 +12,7 @@ export function renderDetailsWindow(item){
           <div class="details-info">
             <h2 class="details-title">${item.title}</h2>
             <p class="details-extra">${'rating' in item ?  'Rating: ' + item.rating : item.author}</p>
-          <div class="details-description">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</div>
+          <div class="details-description">${item.description}</div>
           </div>
         </div>
       </div>
