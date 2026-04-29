@@ -1,7 +1,7 @@
 function renderLogbook(){
   const logBookHTML = `
     <div class="logbook-container">
-      <button class="close-btn">✕</button>
+      <button class="close-btn js-close-btn">✕</button>
 
       <div class="logbook-title-container">
         <h1 class="logbook-title">Logbook</h1>
@@ -30,6 +30,12 @@ function renderLogbook(){
     </div>`;
 
   document.body.insertAdjacentHTML("beforeend", logBookHTML);
+
+  const closeBtn = document.querySelector(".js-close-btn");
+  closeBtn.addEventListener("click", () => {
+    const logbookContainer = document.querySelector(".logbook-container");
+    logbookContainer.remove();
+  });
 }
 
 renderLogbook();
