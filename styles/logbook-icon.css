@@ -1,0 +1,31 @@
+.logbook-icon-container{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 1000;
+
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: rgb(231, 158, 170);
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.logbook-icon-container:hover{
+  background-color: rgba(255, 192, 203);
+}
+
+.logbook-icon{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logbook-image{
+  width: 50%;
+  height: 50%;
+}
